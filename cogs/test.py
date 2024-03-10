@@ -20,10 +20,6 @@ class Got(commands.Cog):
         gotQuote.append(house)
 
         await ctx.send(f"{gotQuote[1]} of {gotQuote[2]} says '{gotQuote[0]}'")
-    
-    @commands.command()
-    async def search(self, ctx): # searches for an image and updates the list
-        await ctx.send("HI")
 
 async def setup(bot):
     await bot.add_cog(Got(bot))
